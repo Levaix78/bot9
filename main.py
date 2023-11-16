@@ -28,14 +28,14 @@ import requests;from user_agent import generate_user_agent as ee
 def gmail(email):
 	try:
 		gm=random.choice(gmail1)
-		req=requests.get(f'https://{gm}.bbbbbfbbbb.repl.co/api/gmail/{email}').json()['status']
+		req=requests.get(f'https://{gm}.hongminhaya.repl.co/api/gmail/{email}').json()['status']
 		if req=='Ok':pp='ok';return pp
 		else:pp='stef';return pp
 	except:gmail(email)
 def insta(email):
 	try:
 		ins='apih'
-		req=requests.get(f'https://{ins}.bbbbbfbbbb.repl.co/Qredes/email={email}').json()['available_instagram']
+		req=requests.get(f'https://{ins}.hongminhaya.repl.co/Qredes/email={email}').json()['available_instagram']
 		if req=='good':pp='ok';return pp
 		else:pp='stef';return pp
 	except:insta(email)
@@ -106,7 +106,7 @@ def info(user,hit):
    BY : @Qredes
     '''
 	return tlg
-bot = telebot.TeleBot("6938326951:AAFnT_cZnfQ0LbPgm7JxzCczE2P66EEp0ok")
+bot = telebot.TeleBot("6864735354:AAF_gql28dvfCm6LWQwMTaJtyqUdMpDj1SA")
 @bot.message_handler(commands=['start'])
 def srt(message):
 	check = types.InlineKeyboardButton(text='ابدأ - Start ',callback_data='check')
